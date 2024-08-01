@@ -82,3 +82,10 @@ jobs:
         /usr/local/share/powershell /usr/local/share/chromium /usr/local/lib/node_modules
         sudo timedatectl set-timezone "$TZ"
         sudo chown $USER:$GROUPS $GITHUB_WORKSPACE
+
+    - name: Final FREE DISKSPACE complete
+      run: |
+        echo "Final FREE DISKSPACE complete"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="
