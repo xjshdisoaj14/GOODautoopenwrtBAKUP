@@ -17,7 +17,9 @@ jobs:
         df -hT
         echo "=============================================================================="
         
-        run: |
+    - name: organ rm apt  
+    
+      run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
