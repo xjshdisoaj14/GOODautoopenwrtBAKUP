@@ -1,0 +1,12 @@
+  name: OpenWrttest
+
+  jobs:
+  build:
+    runs-on: ubuntu-20.04
+  steps:
+  - name: Final FREE DISKSPACE complete
+      run: |
+        echo "Final FREE DISKSPACE complete"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="
